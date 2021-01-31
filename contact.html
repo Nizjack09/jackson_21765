@@ -1,0 +1,165 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">  
+	 <link rel="stylesheet" href="bootstrap.css">
+<style>
+	body {
+	     background-color: green;
+	}
+</style>
+<body>
+	
+
+	<body>
+		<div id="wrapper">
+		<div id="header"></div><!--End of header-->
+		
+		<div id="menu">
+		<ul>
+		 
+		  <li><a class="active" href="#">Contact Us</a></li>
+		  <!--<li><a href="work.html">My Work Here</a></li>-->
+		</ul>
+		</div><!--End of menu-->
+		
+		<div id="content">
+			<div class="contentarea">
+				<div class="leftside">
+					<p>Here it all about form validation.</p>
+				</div>
+				
+		<div class="centerside">
+			<div class="bottom-inner-more-cont">
+				<div class="mst-split"></div>
+					<div class="coms-widget"> 
+						<div class="coms-ttle-area"><h2>Post Your Comment</h2>
+							<span class="com-count">Comments(100%)</span>
+							<div style="clear:both"></div>
+						</div>
+					<div class="com-frm">
+					<form name="form" action="" onSubmit="return check();">
+						<div class="reply-msg"></div>
+						<label>Name</label>
+						<input type="text" class="nme-input" id="name" name="name" placeholder="Enter your Name">
+						<label id="messagename"></label>
+						<label>Email</label>
+						<input type="email" class="nme-input" id="email" name="email" placeholder="Enter your Email">
+						<label id="messageemail"></label>
+						<label>Comment</label>
+						<textarea class="com-input" id="comment" name="comment" placeholder="Enter your Comment"></textarea>
+						<label id="messagecomment"></label>
+						<div class="captcha-bg" style="display:none">
+							<label>Leave This Blank</label>
+							<input type="text" class="nme-input" id="blank" name="blank" placeholder="Leave it Blank">
+						</div>
+						<button class="sub-btn" id="submit" onclick="return validate();" name="Submit">Submit</button>
+					</form>				
+					</div> <!-- END OF com-frm -->
+								 
+					</div> <!-- END OF coms-widget -->
+								  
+					
+			</div>  
+		</div><!--End of leftside-->
+		
+		<div class="rightside">
+		</div><!--End of rightside-->
+		
+		
+			</div><!--End of Contentarea-->
+		</div><!--End of Content-->
+		<div id="footer"></div><!--End of footer-->
+		
+		<div id="footer-footer">
+		copy&copy; 2021 designed by jackson.
+		</div><!--End of footer-->
+		</div><!--End of Wrapper-->
+		<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+		</html>
+		<script>
+		function validate(){
+			if(document.form.name.value=="")
+			  {
+			//alert("Please Enter Your names");
+			document.getElementById("messagename").innerHTML="** Enter your names **";
+			document.form.name.focus();
+			return false;
+			}
+			else if(document.form.email.value=="")
+			  {
+			//alert("Please Enter Your email");
+			document.getElementById("messageemail").innerHTML="** Enter your email **";
+			document.form.email.focus();
+			return false;
+			}  
+			else if(document.form.comment.value=="")
+			  {
+			//alert("Please Enter Your email");
+			document.getElementById("messagecomment").innerHTML="** Enter your comment **";
+			document.form.comment.focus();
+			return false;
+			} 
+			else{
+				alert("Your comment sent successfully!!");	
+			}  
+		}
+		</script>
+			<h> any suggestion contact on this address</h>
+		
+	
+	<p>Email:nizjack09@gmail.com</p>
+	<p>PhoneNumber:+250787783516,+250780627462</p>
+	<p>city:Kigali</p>
+	<p>country:Rwanda</p>
+	<div>
+	<label for="exampleFileInput">file input</label>
+	<input type="File" name="exampleFileInput">
+ <p class="help-block">upload your wishFile then i will help you</p>
+</div>
+	<a  href="index.html">Click for return back on home page</a>
+	<img src="jackson.jpg" style="width:40% ; height:30%">
+
+<!-- Cod
